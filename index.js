@@ -1,27 +1,44 @@
-//Calcular el monto por cuota que debe abonar el usuario y averiguar si ya pagó la mitad o la totalidad de las cuotas. Si no pago la totalidad, calcular el monto restante a abonar. 
+// ----- Lista de productos --------/ 
 
-function calcCuotas (monto, cuotas, cuotasPagadas) {
-    let calculoCuotas = monto/cuotas;
-    let calculoDeuda = monto - calculoCuotas;
+const products = [{
+    id: 1,
+    name: "Choker basic",
+    price: 250,
+    stock: 200,
+    cantidad: 0
+}, {
+    id: 2,
+    name: "Choker Daisy",
+    price: 300,
+    stock: 20,
+    cantidad: 0
+},  {
+    id: 3,
+    name: "Choker Jupiter",
+    price: 200,
+    stock: 25,
+    cantidad: 0
+}];
 
-    for (let i = 0; i <= cuotas; i++){
+let carrito = []
 
-        if (cuotasPagadas === cuotas){
-            console.log (`La cantidad de cuotas elegida fue de ${cuotas}. Entonces, el monto a abonar cada mes será de $${calculoCuotas}. Usted ya abonó la totalidad de la(s) ${cuotas} cuota(s).`)
-        }
-        
-        else if (cuotasPagadas >= cuotas / 2){
-            console.log (`La cantidad de cuotas elegida fue de ${cuotas}. Entonces, el monto a abonar cada mes será de $${calculoCuotas}. Usted ya abonó la mitad de las ${cuotas} cuotas pero aún adeuda $${calculoDeuda}.`)
-        } 
+const clickButton = document.querySelectorAll(".btnAgregar");
+console.log(clickButton)
 
-        else {
-            console.log (`La cantidad de cuotas elegida fue de ${cuotas}. Entonces, el monto a abonar cada mes será de $${calculoCuotas}. Sin embargo, usted aún no abonó la totalidad de las cuotas por lo que adeuda $${calculoDeuda}`)
-        }
-        break;
-    }
+clickButton.forEach(btn =>{
+    btn.addEventListener("click",addItem);
+})
+
+
+function addItem(event){
+    const button = event.target 
+    console.log(button)
+    const objetoElegido = products.find((product) => product.id == button.id);
+    carrito.push(objetoElegido);
+    let total = carrito.reduce((acumulador, itemActual) => acumulador += itemActual.price, 0);
+    console.log(carrito)
+    console.log(total)
+    const mostrar = document.getElementById('result')
+
+    mostrar.innerHTML = `<h3>El precio total es: ${total} </h3>`
 }
-
-calcCuotas (500, 5, 2)
-calcCuotas (1000, 1, 1)
-calcCuotas (50000, 12, 8)
-calcCuotas (100000, 12, 5)

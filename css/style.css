@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    background-color: yellow;
+    font-size: 50px;
+    font-weight: 200;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+img{
+    width: 200px;
+    height: 250px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.container .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    text-align: center;
+}
+
+.card span {
+    display: block;
+}
+
+#btnAgregar{
+    display: block;
+    margin:auto
+}
+
+#result{
+    text-align: center;
+}
