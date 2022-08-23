@@ -4,41 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel= "stylesheet" href="css/style.css">
-    <title>Lulu´s</title>
+    <title>CRUD</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header></header>
-    <main>
-        <h1>Desafío entregable n2</h1>
-            <div class="container">
-                <div class="card">
-                    <img src="recursos/im-choker-basic-white.jpg" alt="Choker basic" srcset="">
-                    <h2>Choker basic</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    <span>Precio: $250</span>
-                    <button class="btnAgregar" id="1">Agregar 1</button>
-                    <a href="#">Leer más</a>
-                </div>
-                <div class="card">
-                    <img src="recursos/im-choker-daisy.jpg" alt="Choker Daisy" srcset="">
-                    <h2>Choker Daisy</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    <span>Precio: $300</span>
-                    <button class="btnAgregar" id="2">Agregar 2</button>
-                    <a href="#">Leer más</a>
-                </div>
-                <div class="card">
-                    <img src="recursos/im-choker-jupiter.jpg" alt="Choker Jupiter" srcset="">
-                    <h2>Choker Jupiter</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    <span>Precio: $200</span>
-                    <button class="btnAgregar" id="3">Agregar 3</button>
-                    <a href="#">Leer más</a>
-                </div>
+    <h2>CRUD: API REST </h2>
+    <button type="button" id="btnAdd">Agregar producto</button>
+    <div class="modal" id="modalAdd">
+        <div class="form-content">
+            <div class="btn-close-form" onclick="closeModalAdd()">X</div>
+            <div class="form-body">
+                <form id="formAdd">
+                    <div class="control">
+                        <label>Nombre: </label>
+                        <input type="text" name="nombre">
+                    </div>
+                    <div class="control">
+                        <label>Precio: </label>
+                        <input type="number" name="precio">
+                    </div>
+                </form>
             </div>
-            <div class="resultado" id="result"></div>
-    </main>
+            <div class="form-footer">
+                <button type="button" onclick="closeModalAdd()">Cancelar</button>
+                <button type="button" onclick="createProduct()">Guardar</button>
+            </div>
+            <span id="msgFormAdd" class="msg-error"></span>
+        </div>
+    </div>
+    <div class="modal" id="modalEdit">
+        <div class="form-content">
+            <div class="btn-close-form" onclick="closeModalEdit()">X</div>
+            <div class="form-body">
+                <form id="formEdit">
+                    <input type="hidden" id="ID"> <!-- type hidden propiedad que oculta el elemento input -->
+                    <input type="hidden" id="source">
+                    <div class="control">
+                        <label>Nombre: </label>
+                        <input type="text" id="nombre">
+                    </div>
+                    <div class="control">
+                        <label>Precio: </label>
+                        <input type="number" id="precio"></div>
+                </form>
+            </div>
+            <div class="form-footer">
+                <button type="button"  onclick="closeModalEdit()">Cancelar</button>
+                <button type="button"  onclick="updateProduct()">Guardar cambios</button>
+            </div>
+            <span id="msgFormEdit" class="msg-error"></span>
+        </div>
+    </div>
+    <div class="modal" id="modalConfirm">
+        <div class="form-content">
+            <div class="btn-close-form" id="btnCloseModalConfirm" onclick="closeModalConfirm()">X</div>
+            <div class="form-body">
+                <h3>Eliminar</h3>
+                <p>¿Estas seguro de eliminar el producto?</p>
+            </div>
+            <div class="form-footer">
+                <button type="button"  onclick="confirmDelete(false)">No</button>
+                <button type="button"  onclick="confirmDelete(true)">Si</button>
+            </div>
+        </div>
+    </div>
+    <div class="alert" id="alert">Algo sucedió..</div>
+    <div id="productsList" class="products-list"></div>
     <script src="index.js"></script>
 </body>
 </html>

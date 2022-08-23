@@ -1,0 +1,98 @@
+{
+    "productos": [{
+        "titulo": "Café la Virginia",
+        "precio": "350",
+        "id": 1,
+        "url": "https://tse2.mm.bing.net/th?id=OIP.20NgHBMzfO8RoALkifmz4wHaHa&pid=Api&P=0&w=168&h=168"},
+    {
+        "titulo": "Pizza",
+        "precio": "750",
+        "id": 2,
+        "url": "https://tse4.mm.bing.net/th?id=OIP.z_ilCv9sIs4AnOpF_9GB5AHaEo&pid=Api&P=0&w=282&h=176"},
+    {
+        "titulo": "Coa Cola",
+        "precio": "420",
+        "id": 3,
+        "url": "https://tse1.mm.bing.net/th?id=OIP.tKQX9UnJmLoRZ0Ht-CuuQAHaHa&pid=Api&P=0&w=165&h=165"},
+    {
+        "titulo": "Sandía",
+        "precio": "350",
+        "id": 4,
+        "url": "https://tse2.mm.bing.net/th?id=OIP.cLF4gvRyTUYCwqf99wQYLAHaEe&pid=Api&P=0&w=291&h=176"},
+    {
+        "precio": 40,
+        "id": 5,
+        "titulo": "Limon",
+        "url": "https://tse2.mm.bing.net/th?id=OIP.waPklUntLINgsa4RCD0k6wHaGF&pid=Api&P=0&w=231&h=190"},
+    {
+        "precio": 150,
+        "id": 6,
+        "titulo": "Tomate",
+        "url": "https://tse2.mm.bing.net/th?id=OIP.ZQf_Lffx4PsbyJBuoEXxgAHaHG&pid=Api&P=0&w=193&h=185"},
+    {
+        "precio": 250,
+        "id": 7,
+        "titulo": "Yerba Pajarito",
+        "url": "https://tse3.mm.bing.net/th?id=OIP.4JCTMSS7qt_l7HSuMoaF4AHaHa&pid=Api&P=0&w=300&h=300"},
+    {
+        "precio": 80,
+        "id": 8,
+        "titulo": "Alfajor Tatin",
+        "url": "https://tse2.mm.bing.net/th?id=OIP.h9SxGFrHeeWVsTY0mMCNEQHaHa&pid=Api&P=0"},
+    {
+        "precio": 320,
+        "id": 9,
+        "titulo": "DetergenteMagistral",
+        "url": "https://tse4.mm.bing.net/th?id=OIP.f5UX8cM_NtCu2UQ-XaHmhQHaE8&pid=Api&P=0&w=243&h=162"},
+    {
+        "precio": 125,
+        "id": 10,
+        "titulo": "Galletas Opera",
+        "url": "https://tse3.mm.bing.net/th?id=OIP.dNn0Afy9JwYAiJD-d9DV6AHaE8&pid=Api&P=0&w=248&h=165"},
+    {
+        "precio": 325,
+        "id": 11,
+        "titulo": "Atun Van Camps",
+        "url": "https://tse1.mm.bing.net/th?id=OIP.y9ZAyLB2Qwk8R6VVz_GKFAHaD6&pid=Api&P=0&w=341&h=180"},
+    {
+        "titulo": "Galleta Diversion",
+        "precio": "250",
+        "id": 12,
+        "url": "https://tse3.mm.bing.net/th?id=OIP.RB_khIkvS3YV99_CFCanLQHaHa&pid=Api&P=0&w=163&h=163"},
+    {
+        "precio": 129,
+        "id": 13,
+        "titulo": "Galleta Polvorita",
+        "url": "https://tse4.mm.bing.net/th?id=OIP.oeGksZDGIZ5iF0aoM4BuvAHaE-&pid=Api&P=0&w=248&h=166"},
+    {
+        "precio": 145,
+        "id": 14,
+        "titulo": "Galleta Milka",
+        "url": "https://masdemucho.com.ar/wp-content/uploads/2021/03/271f37d7-2dd5-4651-bc36-a06ed60e053a.jpg"},
+    {
+        "precio": 175,
+        "id": 15,
+        "titulo": "Galleta Chokis",
+        "url": "https://tse2.mm.bing.net/th?id=OIP.6FkeT9fOCnmeUhPn5QJcgwHaC8&pid=Api&P=0&w=419&h=166"},
+    {
+        "titulo": "Galleta Todyy",
+        "precio": "160",
+        "id": 16,
+        "url": "https://tse4.mm.bing.net/th?id=OIP.mTb_8XXWaOzQSE2Tk2PMFwHaDq&pid=Api&P=0&w=337&h=166"},
+    {
+        "precio": 166,
+        "id": 17,
+        "titulo": "Arroz Gallo de Oro",
+        "url": "https://cdn.shopify.com/s/files/1/0122/0070/6106/products/430011402_1400x.jpg?v=1551365013"},
+    {
+        "titulo": "Fideos moños Matarazzo",
+        "precio": "225",
+        "id": 18,
+        "url": "https://tse4.mm.bing.net/th?id=OIP.pqVH_cqIPvfYKkwxRS2fPwHaHa&pid=Api&P=0"},
+    {
+        "titulo": "Pan",
+        "precio": "506",
+        "id": 19,
+        "url": "undefined"
+    }]
+}
